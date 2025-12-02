@@ -1321,3 +1321,12 @@ div#site-header .siteTitle {
   color: #fff;
   text-shadow: 0px 0px 15px #0000003f;
 }
+/* Yeni Buton Hover Efekti */
+.btn-primary, .btn {
+    transition: all 0.3s ease-in-out; /* Butonlara yumuşak geçiş ekle */
+}
+
+.btn-primary:hover, .btn:hover {
+    opacity: 0.9; /* Hover'da biraz saydamlaştır */
+    transform: translateY(-1px); /* Hafif yukarı taşıyarak basılıyormuş hissi ver */
+}
