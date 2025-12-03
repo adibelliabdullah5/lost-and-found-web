@@ -1330,3 +1330,12 @@ div#site-header .siteTitle {
     opacity: 0.9; /* Hover'da biraz saydamlaştır */
     transform: translateY(-1px); /* Hafif yukarı taşıyarak basılıyormuş hissi ver */
 }
+/* 8. Degisiklik: Belirli bir h1 basligi icin hover */
+.special-hover-title {
+    transition: color 0.3s ease-in-out; /* Renk degisimi icin gecis ekle */
+}
+
+.special-hover-title:hover {
+    color: #ff771d !important; /* Turuncu bir renk belirleyelim */
+    cursor: pointer; /* Fare imlecini el isaretine cevir (istege bagli) */
+}
