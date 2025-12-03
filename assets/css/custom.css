@@ -165,3 +165,13 @@ table.dataTable td {
 .table-responsive{
     overflow-x: unset;
 }
+
+/* Degisiklik: Navigasyon linklerine hover efekti */
+.header-nav a {
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #ff771d !important;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+}
