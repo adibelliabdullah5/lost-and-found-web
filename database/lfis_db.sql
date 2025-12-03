@@ -72,11 +72,17 @@ CREATE TABLE `item_list` (
 --
 
 INSERT INTO `item_list` (`id`, `category_id`, `fullname`, `title`, `description`, `contact`, `image_path`, `status`, `created_at`, `updated`) VALUES
-(1, 2, 'Mark Cooper', 'Found Keys at Central Park', 'Suspendisse nisl diam, pretium ut placerat nec, pellentesque in tortor. Suspendisse vitae arcu a mi dapibus elementum ac dignissim tellus. Duis vitae molestie lacus, porttitor lacinia justo. Ut vulputate, ipsum interdum consequat mollis, odio nisl vulputate est, quis ornare nisi massa a odio.', '09123564789', 'uploads/items/1.png?v=1682912925', 1, '2023-05-01 11:48:45', '2023-05-01 11:48:45'),
-(3, 1, 'Claire Blake', 'Found an Android Phone @ Restaurant Parking Lot', 'It was found forgotten on a table in the restaurant car park. The phone s screen displayed a lock screen photo belonging to a user named ‘Claire Blake’. The phone was out of battery. The owner of the item must verify the person in the lock screen photo or the phone s model/IMEI number for confirmation. Please contact us via our contact number.', '09123654897', 'uploads/items/3.png?v=1682916949', 1, '2023-05-01 12:55:48', '2023-05-01 12:55:49'),
-(5, 3, 'Samantha Lou', 'Found a Watch left @ Room 101', 'Sed ultricies turpis eget commodo condimentum. Nam ac lorem vitae nulla fringilla imperdiet sit amet a arcu. Maecenas malesuada felis eleifend condimentum porttitor. Cras sed metus nec nibh interdum bibendum sit amet at sem.', '09457778988', 'uploads/items/5.png?v=1682917427', 1, '2023-05-01 13:03:47', '2023-05-01 13:03:47'),
-(6, 1, 'Wilson Smith', 'Found Something @ The Mall', 'Donec metus sem, volutpat id mi in, fringilla aliquet odio. Donec eleifend sem et ex maximus tristique. Donec porttitor venenatis aliquet. Aliquam tristique est sed nulla fermentum aliquam eget sed ex', '09123564789', NULL, 2, '2023-05-01 13:34:29', '2023-05-01 14:04:10');
+-- ID 1: Found Keys at Central Park (Önceki 11. Değişiklik)
+(1, 2, 'Mark Cooper', 'Found Keys at Central Park', 'Description: Found at Central Park, near the benches, lying on the grass. Includes 3 house keys, 1 apartment key, and a car key fob (Fiat brand). The owner must confirm a small figure on the key chain or the exact number of keys for verification.', '09123564789', 'uploads/items/1.png?v=1682912925', 1, '2023-05-01 11:48:45', '2023-05-01 11:48:45'),
 
+-- ID 3: Found an Android Phone @ Restaurant Parking Lot (Önceki 12. Değişiklik)
+(3, 1, 'Claire Blake', 'Found an Android Phone @ Restaurant Parking Lot', 'Description: Found forgotten on a table in the restaurant car park. The phone is a modern, large-screen model, and its lock screen displays a photo of a woman. The phone was out of battery. The owner must confirm the phone model (e.g., Samsung Galaxy S23) and the details of the person in the lock screen photo for verification. Please contact us via our contact number.', '09123654897', 'uploads/items/3.png?v=1682916949', 1, '2023-05-01 12:55:48', '2023-05-01 12:55:49'),
+
+-- ID 5: Found a Watch left @ Room 101 (Önceki 11. Değişiklik)
+(5, 3, 'Samantha Lou', 'Found a Watch left @ Room 101', 'Description: Found forgotten on a desk in Room 101 after class. The strap is brown, and the face is square and gold-colored. The owner must specify the brand of the watch and the location of a small scratch on the strap for confirmation.', '09457778988', 'uploads/items/5.png?v=1682917427', 1, '2023-05-01 13:03:47', '2023-05-01 13:03:47'),
+
+-- ID 6: Found Something @ The Mall (Yeni Örnek İçerik)
+(6, 1, 'Wilson Smith', 'Found Something @ The Mall', 'Description: A small, dark blue wallet containing several loyalty cards and a student ID. No cash was found. The owner must verify the name on the student ID and the specific contents of the wallet to claim the item.', '09123564789', NULL, 2, '2023-05-01 13:34:29', '2023-05-01 14:04:10');
 -- --------------------------------------------------------
 
 --
