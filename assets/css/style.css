@@ -1291,8 +1291,8 @@ div#site-header {
   background: var(--bg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
+  background-position: center center;
+  background-attachment: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1306,7 +1306,7 @@ div#site-header:before{
   height: 100%;
   left: 0;
   top: 0;
-  backdrop-filter: brightness(0.5);
+  background: rgba(0,0,0,0.35);
 }
 div#site-header .header-content{
   position: relative;
