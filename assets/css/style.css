@@ -1326,14 +1326,7 @@ div#site-header .siteTitle {
   color: #fff;
   text-shadow: 0px 0px 15px #0000003f;
 }
-div#site-header .hero-logo{
-  display:block;
-  margin: 0.25rem auto;
-  width: 160px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
+/* hero logo removed — styles cleaned up */
 /* Ensure the Find Item button sits clearly below the logo and doesn't overlap */
 div#site-header .header-content .btn {
   margin-top: 1.25rem; /* spacing below the logo */
