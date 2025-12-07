@@ -1321,6 +1321,13 @@ div#site-header .siteTitle {
   color: #fff;
   text-shadow: 0px 0px 15px #0000003f;
 }
+/* Move the Find Item button lower so hero image is more visible */
+div#site-header .header-content .btn {
+  margin-top: 2.5rem; /* pushes the button down */
+}
+@media (max-width: 768px){
+  div#site-header .header-content .btn { margin-top: 1.25rem; }
+}
 /* Yeni Buton Hover Efekti */
 .btn-primary, .btn {
     transition: all 0.3s ease-in-out; /* Butonlara yumuşak geçiş ekle */
