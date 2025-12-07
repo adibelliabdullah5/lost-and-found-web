@@ -175,3 +175,25 @@ table.dataTable td {
     color: #ff771d !important;
     text-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
+
+/* Small header brand (logo + text) styling to match requested layout */
+.logo img{
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.logo .d-none.d-lg-block{
+    font-weight: 700;
+    color: #0d6efd; /* Bootstrap primary blue */
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* keep logo and text vertically centered */
+.logo {
+    align-items: center;
+    display: inline-flex;
+}
