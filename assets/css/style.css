@@ -1286,11 +1286,11 @@ div#item-list {
 div#site-header {
   position: relative;
   --bg:url('../img/neww.jpeg');
-  height: 408px;
+  min-height: 408px;
   width: 100%;
   background: var(--bg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain; /* ensure the whole image is visible */
   background-position: center center;
   background-attachment: scroll;
   display: flex;
