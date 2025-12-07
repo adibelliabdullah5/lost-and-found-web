@@ -1323,8 +1323,8 @@ div#site-header .siteTitle {
   text-align: center;
   font-size: 4rem;
   font-weight: 600;
-  color: #fff;
-  text-shadow: 0px 0px 15px #0000003f;
+  color: #0d6efd; /* match navbar iFOUND blue */
+  text-shadow: 0px 0px 10px rgba(13,110,253,0.18);
 }
 
 /* Hero logo: make it large and span horizontally between title and button */
@@ -1341,11 +1341,12 @@ div#site-header .siteTitle {
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  margin-bottom: 0.75rem; /* ensure space below logo so button doesn't overlap */
 }
 
 /* Ensure the Find Item button sits clearly below the logo and doesn't overlap */
 div#site-header .header-content .btn {
-  margin-top: 1.25rem; /* spacing below the logo */
+  margin-top: 0.5rem; /* move button slightly up, still keeps space from logo */
   position: relative;
   z-index: 4;
 }
