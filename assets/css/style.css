@@ -1321,6 +1321,14 @@ div#site-header .siteTitle {
   color: #fff;
   text-shadow: 0px 0px 15px #0000003f;
 }
+div#site-header .hero-logo{
+  display:block;
+  margin: 1rem auto;
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
 /* Move the Find Item button lower so hero image is more visible */
 div#site-header .header-content .btn {
   margin-top: 2.5rem; /* pushes the button down */
