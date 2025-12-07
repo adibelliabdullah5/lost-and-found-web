@@ -3,8 +3,8 @@
   <div class="container-lg d-flex justify-content-between px-4">
     <div class="d-flex align-items-center justify-content-between">
       <a href="<?= base_url ?>" class="logo d-flex align-items-center">
-        <img src="<?= validate_image('assets/img/neww.jpeg') ?>" alt="iFOUND Logo">
-        <span class="d-none d-lg-block">iFOUND</span>
+        <img src="<?= validate_image($_settings->info('logo')) ?>" alt="System Logo">
+        <span class="d-none d-lg-block"><?= $_settings->info('short_name') ?></span>
       </a>
     </div><!-- End Logo -->
     <nav class="header-nav me-auto">

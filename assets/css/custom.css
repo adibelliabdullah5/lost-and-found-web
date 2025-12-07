@@ -175,25 +175,3 @@ table.dataTable td {
     color: #ff771d !important;
     text-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
-
-/* Make the header logo fill the entire header area (left side) */
-header#header.header {
-    height: 88px; /* adjust if your header is taller/shorter */
-}
-header#header .container-lg {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-header#header .logo {
-    height: 100%;
-    width: 220px; /* logo column width; adjust as needed */
-    display: flex;
-    align-items: center;
-}
-header#header .logo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* cover the whole logo area */
-    display: block;
-}
