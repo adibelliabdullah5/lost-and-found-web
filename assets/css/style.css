@@ -1285,7 +1285,7 @@ div#item-list {
 }
 div#site-header {
   position: relative;
-  --bg:url(./uploads/defaults/ac-image-4.jpg);
+  --bg:url(./uploads/defaults/recelsoft_cover.png);
   height: 408px;
   width: 100%;
   background: var(--bg);

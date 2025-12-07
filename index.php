@@ -27,7 +27,7 @@
       <main id="main" class="main">
         <?php if(in_array($page, ['home'])): ?>
           <div class="col-12">
-            <div id="site-header" style="--bg: url(<?= validate_image($_settings->info('cover')) ?>)">
+            <div id="site-header" style="--bg: url('<?= validate_image('uploads/defaults/recelsoft_cover.png') ?>')">
               <div class="header-content">
                 <div class="siteTitle"><?= $_settings->info('name') ?></div>
                 <hr class="border-light opacity-100 mx-auto" style="width:100px;border-width:3px">
