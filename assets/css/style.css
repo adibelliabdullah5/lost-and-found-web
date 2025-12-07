@@ -1346,7 +1346,7 @@ div#site-header .siteTitle {
 
 /* Ensure the Find Item button sits clearly below the logo and doesn't overlap */
 div#site-header .header-content .btn {
-  margin-top: 0.5rem; /* move button slightly up, still keeps space from logo */
+  margin-top: 0.25rem; /* moved slightly up (keeps safe gap from logo) */
   position: relative;
   z-index: 4;
 }
