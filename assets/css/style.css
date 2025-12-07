@@ -1306,7 +1306,7 @@ div#site-header:before{
   height: 100%;
   left: 0;
   top: 0;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.15);
 }
 div#site-header .header-content{
   position: relative;
