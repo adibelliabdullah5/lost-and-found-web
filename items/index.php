@@ -8,7 +8,7 @@ if(isset($_GET['cid'])){
     }
 }
 ?>
-<h1 class="pageTitle text-center titleTxt">Lost and Found Items</h1>
+<h1 class="pageTitle text-center titleTxt special-hover-title">LOST AND FOUND ITEMS</h1>
 <hr class="mx-auto bg-primary border-primary opacity-100" style="width:50px">
 
 <div class="container-sm">

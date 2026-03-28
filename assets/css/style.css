@@ -64,7 +64,7 @@ h6 {
   font-size: 24px;
   margin-bottom: 0;
   font-weight: 600;
-  color: #012970;
+  color: #580080;
 }
 
 /*--------------------------------------------------------------
@@ -1285,14 +1285,14 @@ div#item-list {
 }
 div#site-header {
   position: relative;
-  --bg:url(./uploads/defaults/ac-image-4.jpg);
-  height: 408px;
+  --bg:url('../img/neww.jpeg');
+  min-height: 408px;
   width: 100%;
   background: var(--bg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
+  background-size: contain; /* ensure the whole image is visible */
+  background-position: center center;
+  background-attachment: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1306,18 +1306,68 @@ div#site-header:before{
   height: 100%;
   left: 0;
   top: 0;
-  backdrop-filter: brightness(0.5);
+  background: rgba(0,0,0,0.15);
 }
 div#site-header .header-content{
   position: relative;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1.5rem; /* give some top breathing room so title sits above logo */
 }
 div#site-header .siteTitle {
   width: 100%;
   text-align: center;
   font-size: 4rem;
   font-weight: 600;
-  color: #fff;
-  text-shadow: 0px 0px 15px #0000003f;
+  color: #0d6efd; /* match navbar iFOUND blue */
+  text-shadow: 0px 0px 10px rgba(13,110,253,0.18);
+}
+
+/* Hero logo: make it large and span horizontally between title and button */
+.hero-logo-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hero-logo{
+  width: 480px; /* large horizontal size, adjust as needed */
+  max-width: 70%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  margin-bottom: 0.75rem; /* ensure space below logo so button doesn't overlap */
+}
+
+/* Ensure the Find Item button sits clearly below the logo and doesn't overlap */
+div#site-header .header-content .btn {
+  margin-top: 0.25rem; /* moved slightly up (keeps safe gap from logo) */
+  position: relative;
+  z-index: 4;
+}
+@media (max-width: 768px){
+  div#site-header .header-content .btn { margin-top: 1.25rem; }
+}
+/* Yeni Buton Hover Efekti */
+.btn-primary, .btn {
+    transition: all 0.3s ease-in-out; /* Butonlara yumuşak geçiş ekle */
+}
+
+.btn-primary:hover, .btn:hover {
+    opacity: 0.9; /* Hover'da biraz saydamlaştır */
+    transform: translateY(-1px); /* Hafif yukarı taşıyarak basılıyormuş hissi ver */
+}
+/* 8. Degisiklik: Belirli bir h1 basligi icin hover */
+.special-hover-title {
+    transition: color 0.3s ease-in-out; /* Renk degisimi icin gecis ekle */
+}
+
+.special-hover-title:hover {
+    color: #ff771d !important; /* Turuncu bir renk belirleyelim */
+    cursor: pointer; /* Fare imlecini el isaretine cevir (istege bagli) */
 }
